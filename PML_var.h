@@ -1,0 +1,57 @@
+!     +++++++++++++++
+!++++++Split E-field++++++
+!     +++++++++++++++
+
+REAL*8 &
+& YZ_E_xy(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_E_xz(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_E_yz(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_E_yx(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_E_zx(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_E_zy(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+
+REAL*8 &
+& ZX_E_xy(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_E_xz(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_E_yz(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_E_yx(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_E_zx(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_E_zy(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+
+REAL*8 &
+& XY_E_xy(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_E_xz(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_E_yz(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_E_yx(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_E_zx(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_E_zy(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+
+!     +++++++++++++++
+!++++++Split H-field++++++
+!     +++++++++++++++
+
+REAL*8 &
+& YZ_H_xy(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_H_xz(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_H_yz(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_H_yx(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_H_zx(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& YZ_H_zy(-MS_PML2:     MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+
+REAL*8 &
+& ZX_H_xy(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_H_xz(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_H_yz(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_H_yx(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_H_zx(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+& ZX_H_zy(-MS_PML2:MS_x+MS_PML, -MS_PML2:     MS_MPL, -MS_PML2:MS_z+MS_PML)
+
+REAL*8 &
+& XY_H_xy(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_H_xz(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_H_yz(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_H_yx(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_H_zx(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+& XY_H_zy(-MS_PML2:MS_x+MS_PML, -MS_PML2:MS_y+MS_MPL, -MS_PML2:MS_z+MS_PML)
+
+
